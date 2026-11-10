@@ -1,0 +1,15 @@
+{
+  "name": "Campaign Landing Page Builder",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "forwardPorts": [
+    8000
+  ],
+  "portsAttributes": {
+    "8000": {
+      "label": "Campaign Landing Page Builder",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    }
+  },
+  "postAttachCommand": "python3 -m http.server 8000 --bind 127.0.0.1"
+}
